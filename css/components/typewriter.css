@@ -1,0 +1,32 @@
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 2px solid rgb(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 2s steps(35) 1s 1 normal both,
+    blink-caret 500ms steps(35) infinite normal;
+  transform: translateY(-50%);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+
+  50% {
+    border-color: transparent;
+  }
+}

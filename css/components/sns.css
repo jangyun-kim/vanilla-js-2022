@@ -1,0 +1,21 @@
+.sns {
+  margin-top: 250px;
+}
+
+.sns span {
+  display: inline-block;
+  padding: 0px 10px;
+  font-size: 30px;
+}
+
+.sns span a:visited {
+  color: white;
+}
+
+.sns span a i {
+  color: white;
+  opacity: 0.6;
+  text-shadow: var(--shadow);
+  font-size: 50px;
+  padding: 0px 25px;
+}

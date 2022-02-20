@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,33 +12,103 @@
     <title>Momentum App</title>
   </head>
   <body>
-    <h2 id="clock">00:00:00</h2>
-
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-
-    <h1 id="greeting" class="hidden"></h1>
-
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" requried />
-    </form>
-    <ul id="todo-list"></ul>
-
-    <div id="quote">
-      <span></span>
-      <span></span>
+    <div class="interface">
+      <div class="todo">
+        <div class="todo-set">
+          <h2>📝To Do List</h2>
+          <form id="todo-form">
+            <input
+              requried
+              type="text"
+              maxlength="22"
+              placeholder="Write Your To-dos"
+            />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+      </div>
     </div>
 
-    <div id="weather">
-      <span></span>
-      <span></span>
+    <div class="interface">
+      <h2 id="clock">00:00:00</h2>
+      <h3 id="date"></h3>
+
+      <form id="login-form" class="hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input type="submit" value="Log In" />
+      </form>
+
+      <div class="typewriter">
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+
+      <SNS>
+        <div class="sns">
+          <span>
+            <a href="https://youtube.com/" target="_blank">
+              <i class="fa fa-youtube"></i>
+            </a>
+          </span>
+          <span>
+            <a href="https://music.youtube.com/" target="_blank">
+              <i class="far fa-play-circle"></i>
+            </a>
+          </span>
+          <span>
+            <a href="https://google.com/" target="_blank">
+              <i class="fa fa-google"></i>
+            </a>
+          </span>
+          <span>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </span>
+        </div>
+      </SNS>
+
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="interface">
+      <weather>
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </weather>
+
+      <music>
+        <div class="music">
+          <div class="music-info">
+            <img
+              class="music-img"
+              width="250px"
+              height="250px"
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/50679769-3849-43ea-a515-a41e76784871/dd7ufij-0317fc9c-405b-4f85-8cf4-64d2069f58f8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUwNjc5NzY5LTM4NDktNDNlYS1hNTE1LWE0MWU3Njc4NDg3MVwvZGQ3dWZpai0wMzE3ZmM5Yy00MDViLTRmODUtOGNmNC02NGQyMDY5ZjU4ZjgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.QDmFYe6LUZbeaU7YCnzw8zQhvU3L4aU7_0CAqlgNswU"
+            />
+
+            <span>BLACKPINK</span>
+            <span>Don't Know What To Do</span>
+
+            <audio controls loop>
+              <source
+                class="control-bar"
+                src="BLACKPINK - Dont Know What To Do.mp3"
+                type="audio/mp3"
+              />
+            </audio>
+          </div>
+        </div>
+      </music>
     </div>
 
     <script src="js/greetings.js"></script>

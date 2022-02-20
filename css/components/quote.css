@@ -1,0 +1,14 @@
+#quote {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+}
+
+#quote span:first-child {
+  display: block;
+  font-weight: 600;
+}
+
+#quote span:last-child {
+  opacity: 0.8;
+}

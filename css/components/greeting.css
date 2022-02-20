@@ -1,0 +1,9 @@
+#greeting {
+  margin-top: 50px;
+  font-size: 50px;
+  text-shadow: var(--shadow);
+}
+
+#login-form {
+  margin-top: 40px;
+}

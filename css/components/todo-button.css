@@ -1,0 +1,10 @@
+button {
+  background: none;
+  border: none;
+  margin-top: 15px;
+}
+
+button:hover {
+  text-shadow: var(--shadow);
+  color: white;
+}

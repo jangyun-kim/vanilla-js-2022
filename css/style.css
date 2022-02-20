@@ -1,3 +1,36 @@
+@import "reset.css";
+@import "components/bgimg.css";
+@import "components/clock.css";
+@import "components/typewriter.css";
+@import "components/column.css";
+@import "components/todo.css";
+@import "components/todo-button.css";
+@import "components/greeting.css";
+@import "variable.css";
+@import "components/music.css";
+@import "components/weather.css";
+@import "components/sns.css";
+@import "components/quote.css";
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  background: none;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+body,
+input {
+  font-family: "Anonymous Pro", monospace;
+  color: white;
+}
+
 .hidden {
   display: none;
 }
